@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
 }
 
 body {
-    background-color: #696969;
+    background-color: #272727;
     line-height: 1.5;
 }
 
 h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 60px;
     line-height: 1;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: rgb(255, 0, 255);
+    text-shadow: 1px 1px #ea00ff60;
+}
+
+#content h2 {
+    margin-bottom: 30px;
 }
 
 a {
@@ -82,10 +94,17 @@ video {
     color: white;
     border-radius: 10px;
     font-size: 20px;
+    transition: all .2s;
 }
 
 #click:hover {
-    transform: scale(0.95);
+    margin-top: 8px;
+    font-size: 25px;
+    border: 2px solid #ea00ff;
+    padding: 14px 36px;
+    background-color: #1a1a1a;
+    color: rgb(255, 0, 255);
+    box-shadow: 0px 0px 15px 1px #ea00ff, inset 0px 0px 8px 1px #ea00ff;
 }
 
 #about {
@@ -105,7 +124,19 @@ video {
 }
 
 i {
-    /* Font Awesome */
     font-size: 48px;
     margin: 0 5px;
+    color: white;
+    transition-duration: .7s;
+    
+}
+
+.fa-globe {
+    position: relative;
+    bottom: 4px;
+    font-size: 40px;
+}
+
+i:hover {
+    color: rgb(255, 0, 255);
 }
